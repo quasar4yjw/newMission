@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+#puzzleTop{
+border : solid 3px red;
+ height : 220px;
+ width : 220px;
+}
+
+.tile{
+  border-radius: 11px;
+  background-color: orange;
+  float:left;
+  margin: 5px;
+  height: 100px;
+  width: 100px;
+ 
+
+}
