@@ -1,7 +1,26 @@
 @CHARSET "UTF-8";
 
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+body {
+	font: 200 32px Hanna, Helvetica, sans-serif;
+}
+button{
+	  padding: 10px 30px 10px 30px;
+    background: orange;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+    width: 200px;
+    height: 100px;
+    border-radius: 11px;
+    font: 36px Hanna, Helvetica, sans-serif;
+    margin: 10px;
+}
+
 #puzzleTop{
-border : solid 3px red;
  height : 220px;
  width : 220px;
 }
@@ -15,4 +34,9 @@ border : solid 3px red;
   width: 100px;
  
 
+}
+
+#resultTrue{
+
+	display:none;
 }
