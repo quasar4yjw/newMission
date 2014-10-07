@@ -6,16 +6,16 @@ body {
 }
 button{
 	  padding: 10px 30px 10px 30px;
-    background: orange;
+    background: darkorange;
     border: none;
     color: #FFF;
-    box-shadow: 1px 1px 1px #4C6E91;
-    -webkit-box-shadow: 1px 1px 1px #4C6E91;
-    -moz-box-shadow: 1px 1px 1px #4C6E91;
-    text-shadow: 1px 1px 1px #5079A3;
+    box-shadow: 5px 5px 5px maroon;
+    -webkit-box-shadow: 5px 5px 5px maroon;
+    -moz-box-shadow: 5px 5px 5px maroon;
+    text-shadow: 2px 2px 2px maroon;
     width: 200px;
     height: 100px;
-    border-radius: 11px;
+    border-radius: 15px;
     font: 36px Hanna, Helvetica, sans-serif;
     margin: 10px;
 }
@@ -23,11 +23,19 @@ button{
 #puzzleTop{
  height : 220px;
  width : 220px;
+ border-radius: 15px;
+ background-color: maroon;
+ padding:3px;
+}
+
+#puzzleBot{
+ width : 380px;
+ position:relative;
 }
 
 .tile{
-  border-radius: 11px;
-  background-color: orange;
+  border-radius: 15px;
+  background-color: darkorange;
   float:left;
   margin: 5px;
   height: 100px;
@@ -37,6 +45,8 @@ button{
 }
 
 #resultTrue{
-
+	position:absolute;
+	top:20px;
+  left:225px;
 	display:none;
 }

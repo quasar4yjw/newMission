@@ -1,6 +1,5 @@
 var stage = 2;
 var check = 0;
-
 function rotateCell(element){
 
 	element.animate({  borderSpacing: 180 }, {
@@ -18,20 +17,29 @@ function hoverReset(){
 		$(this).css('background-color', 'pink');
 
 	}, function(event){
-		$(this).css('background-color', 'orange');
+		$(this).css('background-color', 'darkorange');
 	}); }
+
+$('#btn1').hover(function(event){
+	$(this).css('background-color', 'pink');
+
+}, function(event){
+	$(this).css('background-color', 'darkorange');
+}); 
 
 
 
 $('#btn1').click(function(event){
+	check = 0;
 	$('.tile').each(function(index, element){
 
 		if (parseInt(Math.random()*2)){
 			check++;
-			$(element).css('background-color', 'black')
+
+			$(element).css('background-color', 'black');
 			rotateCell($(element));
 			setTimeout(function(){
-				$(element).css('background-color', 'orange');
+				$(element).css('background-color', 'darkorange');
 				hoverReset();
 			} ,2000);
 
@@ -39,10 +47,10 @@ $('#btn1').click(function(event){
 				$(element).click(function(event){
 					check--;
 					if (check == 0){
-						
-						
+
+
 						$(element).append('<img src=imageV.png width=100 height=100>')	
-						$('#resultTrue').fadeIn();
+						$('#resultTrue').fadeIn().fadeOut(1500);
 						stage++;
 
 						setTimeout(function(){
@@ -53,33 +61,33 @@ $('#btn1').click(function(event){
 								$('<div>').appendTo('#puzzleTop').attr('class', 'tile')
 
 							}
-							hoverReset();
-						} ,1800);
-					}
-					
-						$(element).css('background-color', 'blue');
 
-						$(element).hover(function(event){
-							$(this).css('background-color', 'blue');
-						}, function(event){
-							$(this).css('background-color', 'blue');
-						}); 
-					
+						} ,2000);
+					}
+
+					$(element).css('background-color', 'crimson');
+
+					$(element).hover(function(event){
+						$(this).css('background-color', 'crimson');
+					}, function(event){
+						$(this).css('background-color', 'crimson');
+					}); 
+
 				});
 			} ,2300);
 
 
 		} else {
 			$(element).click(function(event){
-				$(element).css('background-color', 'orange');
+				$(element).css('background-color', 'darkorange');
 				$(element).append('<img src=imageX.jpg width=100 height=100>')
 				setTimeout(function(){
 					$(element).empty();
 				} ,1000);
 				$(element).hover(function(event){
-					$(this).css('background-color', 'orange');
+					$(this).css('background-color', 'darkorange');
 				}, function(event){
-					$(this).css('background-color', 'orange');
+					$(this).css('background-color', 'darkorange');
 				}); 
 			});
 		}
