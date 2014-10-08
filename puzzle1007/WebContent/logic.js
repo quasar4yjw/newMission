@@ -20,24 +20,25 @@ function hoverReset(){
 		$(this).css('background-color', 'darkorange');
 	}); }
 
-$('#btn1').hover(function(event){
-	$(this).css('background-color', 'pink');
+$('#btnStart').hover(function(event){
+	$(this).css('background-color', 'pink').css('color', 'black');
 
 }, function(event){
-	$(this).css('background-color', 'darkorange');
+	$(this).css('background-color', 'darkorange').css('color', 'white');
 }); 
 
 
 
-$('#btn1').click(function(event){
+$('#btnStart').click(function(event){
 	check = 0;
 	$('.tile').each(function(index, element){
 
 		if (parseInt(Math.random()*2)){
+			rotateCell($(element));
 			check++;
 
 			$(element).css('background-color', 'black');
-			rotateCell($(element));
+
 			setTimeout(function(){
 				$(element).css('background-color', 'darkorange');
 				hoverReset();
