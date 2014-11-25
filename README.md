@@ -4,4 +4,4 @@ newMission
 
 copyCat TileMatrix on Lumosity.com
 
-Jungwoo YEOM / Jungdam NA
+Jungwoo YEOM / Jeongdahm NA(jeongdahm)
